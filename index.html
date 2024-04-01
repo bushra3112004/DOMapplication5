@@ -31,11 +31,17 @@
 </head>
 <body>
     <h1 class="dice-title">Dice Roller</h1>
-    <img src="./images/dice.png" alt="dice" class="dice-img"/>
+    <img src="./images/dice.png" alt="dice" class="dice-img" id="dice-img"/>
     <button class="btn-dice">Roll Dice</button>
     <script>
+function roll(){
+    const min=1;
+    const max=6;
+    const randomNumber=Math.round(Math.random()=(max-min))+min;
+    
 
-        
+}
+
         </script>
 </body>
 </html>
