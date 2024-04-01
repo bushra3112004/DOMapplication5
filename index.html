@@ -43,7 +43,7 @@
             }
         }
 
-        .animate{
+        animate{
             animation: roll is infinite;
         }
         </style>
@@ -80,8 +80,10 @@ function roll(){
             default:
             imgElement.src='images/dice.png';    
     }
-    
-
+    imgElement.classList.add("animate");
+    setTimeout(()=>{
+        imgElement.classList.remove("animate");
+    },1000);
 }
 
         </script>
